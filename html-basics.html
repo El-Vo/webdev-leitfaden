@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Grundlagen für Anfänger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Grundlagen für Anfänger</h1>
+        <p class="subtitle">Lerne die Bausteine des Webs kennen</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#was-ist-html">Was ist HTML?</a></li>
+            <li><a href="#grundstruktur">HTML Grundstruktur</a></li>
+            <li><a href="#elemente">Wichtige HTML Elemente</a></li>
+            <li><a href="#attribute">HTML Attribute</a></li>
+            <li><a href="#listen">Listen erstellen</a></li>
+            <li><a href="#links">Links erstellen</a></li>
+            <li><a href="#bilder">Bilder einfügen</a></li>
+            <li><a href="#tabellen">Tabellen erstellen</a></li>
+            <li><a href="#formulare">Einfache Formulare</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="was-ist-html">
+            <h2>Was ist HTML?</h2>
+            <div class="content-box">
+                <p><strong>HTML</strong> steht für <em>Hypertext Markup Language</em> und ist die Standardsprache für Webseiten.</p>
+                <p>Mit HTML definieren wir die <strong>Struktur und den Inhalt</strong> einer Webseite - ähnlich wie das Skelett eines Körpers.</p>
+                <p>HTML besteht aus <strong>Elementen</strong>, die durch <strong>Tags</strong> dargestellt werden und dem Browser mitteilen, wie Inhalte anzuzeigen sind.</p>
+            </div>
+        </section>
+
+        <section id="grundstruktur">
+            <h2>HTML Grundstruktur</h2>
+            <div class="content-box">
+                <p>Jedes HTML-Dokument folgt einer grundlegenden Struktur:</p>
+                <div class="code-example">
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Seitentitel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Sichtbarer Inhalt hier --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+                <ul class="explanation">
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - Deklariert den Dokumenttyp als HTML5</li>
+                    <li><code>&lt;html&gt;</code> - Das Wurzelelement einer HTML-Seite</li>
+                    <li><code>&lt;head&gt;</code> - Enthält Meta-Informationen über die Seite</li>
+                    <li><code>&lt;title&gt;</code> - Definiert den Titel der Seite (erscheint im Browser-Tab)</li>
+                    <li><code>&lt;body&gt;</code> - Enthält den sichtbaren Inhalt der Seite</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="elemente">
+            <h2>Wichtige HTML Elemente</h2>
+            <div class="content-box">
+                <h3>Überschriften</h3>
+                <p>HTML bietet sechs Ebenen von Überschriften:</p>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>&lt;h1&gt;Überschrift 1&lt;/h1&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <h1 class="example">Überschrift 1</h1>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;h2&gt;Überschrift 2&lt;/h2&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <h2 class="example">Überschrift 2</h2>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;h3&gt;Überschrift 3&lt;/h3&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <h3 class="example">Überschrift 3</h3>
+                    </div>
+                </div>
+
+                <h3>Absätze und Textformatierung</h3>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>&lt;p&gt;Dies ist ein Absatz.&lt;/p&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <p class="example">Dies ist ein Absatz.</p>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;strong&gt;Fettgedruckter Text&lt;/strong&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <strong class="example">Fettgedruckter Text</strong>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;em&gt;Kursiver Text&lt;/em&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <em class="example">Kursiver Text</em>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;br&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <p class="example">Zeilenumbruch<br>Nächste Zeile</p>
+                    </div>
+
+                    <div class="code-example">
+                        <pre><code>&lt;hr&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <hr class="example">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="attribute">
+            <h2>HTML Attribute</h2>
+            <div class="content-box">
+                <p>Attribute liefern zusätzliche Informationen zu HTML-Elementen:</p>
+                <div class="code-example">
+                    <pre><code>&lt;tagname attribute="wert"&gt;Inhalt&lt;/tagname&gt;</code></pre>
+                </div>
+                <p>Beispiele für häufig verwendete Attribute:</p>
+                <ul>
+                    <li><code>id</code> - Eindeutiger Identifikator für ein Element</li>
+                    <li><code>class</code> - Klassifiziert Elemente für CSS und JavaScript</li>
+                    <li><code>style</code> - Definiert Inline-CSS-Stile</li>
+                    <li><code>src</code> - Gibt die Quelle für eingebettete Inhalte an</li>
+                    <li><code>href</code> - Gibt das Ziel eines Links an</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="listen">
+            <h2>Listen erstellen</h2>
+            <div class="content-box">
+                <h3>Ungeordnete Liste</h3>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Erster Punkt&lt;/li&gt;
+    &lt;li&gt;Zweiter Punkt&lt;/li&gt;
+    &lt;li&gt;Dritter Punkt&lt;/li&gt;
+&lt;/ul&gt;
+                        </code></pre>
+                    </div>
+                    <div class="result">
+                        <ul class="example">
+                            <li>Erster Punkt</li>
+                            <li>Zweiter Punkt</li>
+                            <li>Dritter Punkt</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Geordnete Liste</h3>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Erster Schritt&lt;/li&gt;
+    &lt;li&gt;Zweiter Schritt&lt;/li&gt;
+    &lt;li&gt;Dritter Schritt&lt;/li&gt;
+&lt;/ol&gt;
+                        </code></pre>
+                    </div>
+                    <div class="result">
+                        <ol class="example">
+                            <li>Erster Schritt</li>
+                            <li>Zweiter Schritt</li>
+                            <li>Dritter Schritt</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>Links erstellen</h2>
+            <div class="content-box">
+                <p>Links werden mit dem <code>&lt;a&gt;</code>-Element erstellt:</p>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>&lt;a href="https://www.example.com"&gt;Besuch uns!&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <a href="https://www.example.com" class="example">Besuch uns!</a>
+                    </div>
+                </div>
+
+                <h3>Interne Links (zur gleichen Seite)</h3>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>&lt;a href="#elemente"&gt;Zu den HTML-Elementen&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="result">
+                        <a href="#elemente" class="example">Zu den HTML-Elementen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bilder">
+            <h2>Bilder einfügen</h2>
+            <div class="content-box">
+                <p>Bilder werden mit dem <code>&lt;img&gt;</code>-Element eingefügt:</p>
+                <div class="code-example">
+                    <pre><code>&lt;img src="bild.jpg" alt="Beschreibung des Bildes" width="300" height="200"&gt;</code></pre>
+                </div>
+                <p>Wichtige Attribute:</p>
+                <ul>
+                    <li><code>src</code> - Pfad zum Bild (erforderlich)</li>
+                    <li><code>alt</code> - Alternative Textbeschreibung (wichtig für Barrierefreiheit)</li>
+                    <li><code>width</code> - Breite des Bildes in Pixeln</li>
+                    <li><code>height</code> - Höhe des Bildes in Pixeln</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tabellen">
+            <h2>Tabellen erstellen</h2>
+            <div class="content-box">
+                <p>Tabellen werden mit den Elementen <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> und <code>&lt;td&gt;</code> erstellt:</p>
+                <div class="example-grid">
+                    <div class="code-example">
+                        <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Alter&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Max&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </code></pre>
+                    </div>
+                    <div class="result">
+                        <table class="example">
+                            <tr>
+                                <th>Name</th>
+                                <th>Alter</th>
+                            </tr>
+                            <tr>
+                                <td>Max</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Anna</td>
+                                <td>23</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulare">
+            <h2>Einfache Formulare</h2>
+            <div class="content-box">
+                <p>Formulare werden mit dem <code>&lt;form&gt;</code>-Element erstellt:</p>
+                <div class="code-example">
+                    <pre><code>
+&lt;form action="/action_page.php" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;E-Mail:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Absenden"&gt;
+&lt;/form&gt;
+                    </code></pre>
+                </div>
+                <p>Häufige Eingabetypen:</p>
+                <ul>
+                    <li><code>text</code> - Textfeld für einzeilige Texteingabe</li>
+                    <li><code>email</code> - Feld für E-Mail-Adressen</li>
+                    <li><code>password</code> - Feld für Passwörter (maskiert)</li>
+                    <li><code>checkbox</code> - Kontrollkästchen für Ja/Nein-Optionen</li>
+                    <li><code>radio</code> - Optionsfeld für eine Auswahl aus mehreren Optionen</li>
+                    <li><code>submit</code> - Button zum Absenden des Formulars</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diese einfache Webseite wurde nur mit HTML und CSS erstellt, um die Grundlagen von HTML zu demonstrieren.</p>
+        <p>© 2025 TechAcademy - Web Development Track</p>
+    </footer>
+</body>
+</html>
