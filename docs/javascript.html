@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Programming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web_DEV:: SYSTEM [JavaScript]</h1>
+        <p class="subtitle">The dynamic neural network of the web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HTML Module</a></li>
+            <li><a href="css.html">CSS Module</a></li>
+            <li><a href="#was-ist-js">What is JavaScript?</a></li>
+            <li><a href="#js-fundamentals">JS Fundamentals</a></li>
+            <li><a href="#js-dom">DOM Manipulation</a></li>
+            <li><a href="#js-events">Events</a></li>
+            <li><a href="#js-functions">Functions & Objects</a></li>
+            <li><a href="interaction.html">Interaction Module</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="was-ist-js">
+            <h2>What is JavaScript?</h2>
+            <div class="content-box">
+                <p><strong>JavaScript</strong> is a dynamic, high-level programming language that enables interactive web pages and is an essential part of web applications.</p>
+                <p>While HTML provides structure and CSS handles styling, JavaScript adds behavior and interactivity to web pages. With JavaScript, you can create dynamic content, control multimedia, animate images, validate forms, and much more.</p>
+                <p>JavaScript was created in 1995 by Brendan Eich while working at Netscape and has since evolved into one of the world's most widely used programming languages, extending beyond the browser into server environments (Node.js), mobile applications, desktop software, and even IoT devices.</p>
+            </div>
+        </section>
+
+        <section id="js-fundamentals">
+            <h2>1. JavaScript Fundamentals</h2>
+            <div class="content-box">
+                <p>JavaScript is a versatile language with syntax that may look familiar if you've worked with other programming languages. Here are some fundamental concepts:</p>
+                
+                <h3>Variables and Data Types</h3>
+                <div class="code-example">
+                    <pre><code>// Variables
+let message = "Hello, world!"; // String
+const pi = 3.14159;            // Number
+var isActive = true;           // Boolean
+
+// Modern JavaScript prefers let and const over var
+const user = {                 // Object
+    name: "CyberUser",
+    level: 42,
+    isAdmin: false
+};
+
+const colors = ["red", "green", "blue"]; // Array
+let noValue = null;            // Null
+let undefinedVar;              // Undefined (automatically assigned)</code></pre>
+                </div>
+                
+                <h3>Operators</h3>
+                <div class="code-example">
+                    <pre><code>// Arithmetic operators
+let sum = 5 + 10;      // Addition
+let diff = 10 - 5;     // Subtraction
+let product = 5 * 10;  // Multiplication
+let quotient = 10 / 5; // Division
+let remainder = 10 % 3; // Modulus (remainder)
+
+// Comparison operators
+let isEqual = 5 === 5;      // Strict equality (value and type)
+let isNotEqual = 5 !== "5"; // Strict inequality
+let greaterThan = 10 > 5;   // Greater than
+
+// Logical operators
+let andResult = true && false; // Logical AND
+let orResult = true || false;  // Logical OR
+let notResult = !true;         // Logical NOT</code></pre>
+                </div>
+                
+                <h3>Control Flow</h3>
+                <div class="code-example">
+                    <pre><code>// Conditional statements
+if (score >= 90) {
+    console.log("Excellent");
+} else if (score >= 70) {
+    console.log("Good");
+} else {
+    console.log("Keep practicing");
+}
+
+// Switch statement
+switch (day) {
+    case "Monday":
+        console.log("Start of work week");
+        break;
+    case "Friday":
+        console.log("End of work week");
+        break;
+    default:
+        console.log("Another day");
+}
+
+// Loops
+for (let i = 0; i < 5; i++) {
+    console.log(`Iteration ${i}`);
+}
+
+let j = 0;
+while (j < 5) {
+    console.log(`While loop: ${j}`);
+    j++;
+}
+
+const items = ["item1", "item2", "item3"];
+for (const item of items) {
+    console.log(item);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="js-dom">
+            <h2>2. DOM Manipulation</h2>
+            <div class="content-box">
+                <p>The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.</p>
+                
+                <p>JavaScript can access and manipulate the DOM, allowing you to dynamically change HTML elements on a webpage.</p>
+                
+                <h3>Selecting Elements</h3>
+                <div class="code-example">
+                    <pre><code>// Select a single element by ID
+const header = document.getElementById("header");
+
+// Select elements by class name (returns HTMLCollection)
+const items = document.getElementsByClassName("item");
+
+// Select elements by tag name (returns HTMLCollection)
+const paragraphs = document.getElementsByTagName("p");
+
+// Select elements using CSS selectors (returns first match)
+const container = document.querySelector(".container");
+
+// Select all elements matching a CSS selector (returns NodeList)
+const buttons = document.querySelectorAll("button.primary");</code></pre>
+                </div>
+                
+                <h3>Modifying Elements</h3>
+                <div class="code-example">
+                    <pre><code>// Change text content
+element.textContent = "New text content";
+
+// Change HTML content
+element.innerHTML = "<span>New HTML content</span>";
+
+// Modify attributes
+element.setAttribute("src", "new-image.jpg");
+const imgSrc = element.getAttribute("src");
+element.removeAttribute("disabled");
+
+// Working with classes
+element.classList.add("active");
+element.classList.remove("hidden");
+element.classList.toggle("highlighted");
+const hasClass = element.classList.contains("active");
+
+// Change styles
+element.style.color = "#00f3ff";
+element.style.backgroundColor = "#1a1a2e";
+element.style.fontSize = "18px";</code></pre>
+                </div>
+                
+                <h3>Creating and Removing Elements</h3>
+                <div class="code-example">
+                    <pre><code>// Create a new element
+const newDiv = document.createElement("div");
+newDiv.textContent = "Newly created element";
+newDiv.classList.add("new-item");
+
+// Add element to the DOM
+document.body.appendChild(newDiv);
+parentElement.insertBefore(newDiv, referenceElement);
+
+// Clone an element
+const clone = element.cloneNode(true); // true means deep clone
+
+// Remove elements
+element.remove(); // Modern method
+parentElement.removeChild(childElement); // Traditional method</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="js-events">
+            <h2>3. JavaScript Events</h2>
+            <div class="content-box">
+                <p>Events are actions or occurrences that happen in the browser, which can be detected by JavaScript. Events allow you to create interactive web pages that respond to user actions.</p>
+                
+                <h3>Adding Event Listeners</h3>
+                <div class="code-example">
+                    <pre><code>// Modern approach using addEventListener
+const button = document.querySelector("#submit-btn");
+
+button.addEventListener("click", function(event) {
+    console.log("Button clicked!");
+    event.preventDefault(); // Prevent default action if needed
+});
+
+// Using arrow functions
+element.addEventListener("mouseover", (event) => {
+    element.style.backgroundColor = "#00f3ff";
+});
+
+element.addEventListener("mouseout", (event) => {
+    element.style.backgroundColor = "#1a1a2e";
+});</code></pre>
+                </div>
+                
+                <h3>Common Events</h3>
+                <ul class="explanation">
+                    <li><code>click</code> - When an element is clicked</li>
+                    <li><code>dblclick</code> - When an element is double-clicked</li>
+                    <li><code>mouseover</code> / <code>mouseout</code> - When the mouse enters/leaves an element</li>
+                    <li><code>mousedown</code> / <code>mouseup</code> - When mouse button is pressed/released</li>
+                    <li><code>keydown</code> / <code>keyup</code> - When a keyboard key is pressed/released</li>
+                    <li><code>submit</code> - When a form is submitted</li>
+                    <li><code>load</code> - When a resource (e.g., page, image) has loaded</li>
+                    <li><code>resize</code> - When the window is resized</li>
+                    <li><code>scroll</code> - When the user scrolls</li>
+                    <li><code>change</code> - When form input value changes</li>
+                </ul>
+                
+                <h3>Event Bubbling and Delegation</h3>
+                <p>Events in JavaScript "bubble up" through the DOM hierarchy by default. This allows for event delegation, where you can attach a single event listener to a parent element to handle events for multiple child elements:</p>
+                
+                <div class="code-example">
+                    <pre><code>// Event delegation example
+const list = document.querySelector("#item-list");
+
+list.addEventListener("click", function(event) {
+    // Check if the clicked element is a list item
+    if (event.target.tagName === "LI") {
+        console.log("List item clicked:", event.target.textContent);
+        event.target.classList.toggle("selected");
+    }
+});</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="js-functions">
+            <h2>4. Functions & Objects</h2>
+            <div class="content-box">
+                <p>Functions and objects are central to JavaScript programming. They allow you to organize, structure, and reuse code efficiently.</p>
+                
+                <h3>Functions</h3>
+                <div class="code-example">
+                    <pre><code>// Function declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Function expression
+const sayGoodbye = function(name) {
+    return `Goodbye, ${name}!`;
+};
+
+// Arrow function (ES6+)
+const multiply = (a, b) => a * b;
+
+// Default parameters
+function setLevel(level = 1) {
+    console.log(`Level set to ${level}`);
+}
+
+// Rest parameters
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+// Immediately Invoked Function Expression (IIFE)
+(function() {
+    console.log("This runs immediately!");
+})();</code></pre>
+                </div>
+                
+                <h3>Objects</h3>
+                <div class="code-example">
+                    <pre><code>// Object literal
+const user = {
+    username: "CyberUser",
+    score: 95,
+    isActive: true,
+    
+    // Method
+    incrementScore: function(points) {
+        this.score += points;
+    },
+    
+    // Shorthand method syntax (ES6+)
+    displayInfo() {
+        console.log(`User: ${this.username}, Score: ${this.score}`);
+    }
+};
+
+// Accessing properties
+console.log(user.username);      // Dot notation
+console.log(user["score"]);      // Bracket notation
+
+// Adding/modifying properties
+user.level = 5;
+user.score = 100;
+
+// Object destructuring (ES6+)
+const { username, score } = user;
+
+// Spread operator with objects (ES6+)
+const updatedUser = { ...user, score: 110, rank: "Gold" };</code></pre>
+                </div>
+                
+                <h3>Constructor Functions & Classes</h3>
+                <div class="code-example">
+                    <pre><code>// Constructor function (traditional approach)
+function Player(name, level) {
+    this.name = name;
+    this.level = level;
+    this.health = 100;
+    
+    this.takeDamage = function(amount) {
+        this.health -= amount;
+    };
+}
+
+const player1 = new Player("CyberRunner", 5);
+
+// ES6 Class syntax (modern approach)
+class Character {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+        this.health = 100;
+        this.mana = 50;
+    }
+    
+    castSpell(cost, damage) {
+        if (this.mana >= cost) {
+            this.mana -= cost;
+            return damage;
+        }
+        return 0;
+    }
+    
+    heal(amount) {
+        this.health = Math.min(100, this.health + amount);
+    }
+}
+
+const wizard = new Character("Merlin", "Wizard");</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This page was created to teach the basic concepts of JavaScript.</p>
+        <p>© 2025 CYBER_TECH_ACADEMY:: Web Development Unit</p>
+    </footer>
+</body>
+</html>
