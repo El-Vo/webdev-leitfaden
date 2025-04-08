@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Programming</title>
     <link rel="stylesheet" href="javascript-styles.css">
 </head>
+
 <body>
     <header>
         <h1>JavaScript</h1>
@@ -24,17 +26,23 @@
         <section id="was-ist-js">
             <h2>What is JavaScript?</h2>
             <div class="content-box">
-                <p><strong>JavaScript</strong> is a dynamic, high-level programming language that enables interactive web pages and is an essential part of web applications.</p>
-                <p>While HTML provides structure and CSS handles styling, JavaScript adds behavior and interactivity to web pages. With JavaScript, you can create dynamic content, control multimedia, animate images, validate forms, and much more.</p>
-                <p>JavaScript was created in 1995 by Brendan Eich while working at Netscape and has since evolved into one of the world's most widely used programming languages, extending beyond the browser into server environments (Node.js), mobile applications, desktop software, and even IoT devices.</p>
+                <p><strong>JavaScript</strong> is a dynamic, high-level programming language that enables interactive
+                    web pages and is an essential part of web applications.</p>
+                <p>While HTML provides structure and CSS handles styling, JavaScript adds behavior and interactivity to
+                    web pages. With JavaScript, you can create dynamic content, control multimedia, animate images,
+                    validate forms, and much more.</p>
+                <p>JavaScript was created in 1995 by Brendan Eich while working at Netscape and has since evolved into
+                    one of the world's most widely used programming languages, extending beyond the browser into server
+                    environments (Node.js), mobile applications, desktop software, and even IoT devices.</p>
             </div>
         </section>
 
         <section id="js-fundamentals">
             <h2>1. JavaScript Fundamentals</h2>
             <div class="content-box">
-                <p>JavaScript is a versatile language with syntax that may look familiar if you've worked with other programming languages. Here are some fundamental concepts:</p>
-                
+                <p>JavaScript is a versatile language with syntax that may look familiar if you've worked with other
+                    programming languages. Here are some fundamental concepts:</p>
+
                 <h3>Variables and Data Types</h3>
                 <div class="code-example">
                     <pre><code>// Variables
@@ -53,7 +61,7 @@ const colors = ["red", "green", "blue"]; // Array
 let noValue = null;            // Null
 let undefinedVar;              // Undefined (automatically assigned)</code></pre>
                 </div>
-                
+
                 <h3>Operators</h3>
                 <div class="code-example">
                     <pre><code>// Arithmetic operators
@@ -73,7 +81,7 @@ let andResult = true && false; // Logical AND
 let orResult = true || false;  // Logical OR
 let notResult = !true;         // Logical NOT</code></pre>
                 </div>
-                
+
                 <h3>Control Flow</h3>
                 <div class="code-example">
                     <pre><code>// Conditional statements
@@ -119,10 +127,12 @@ for (const item of items) {
         <section id="js-dom">
             <h2>2. DOM Manipulation</h2>
             <div class="content-box">
-                <p>The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.</p>
-                
-                <p>JavaScript can access and manipulate the DOM, allowing you to dynamically change HTML elements on a webpage.</p>
-                
+                <p>The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page
+                    so that programs can change the document structure, style, and content.</p>
+
+                <p>JavaScript can access and manipulate the DOM, allowing you to dynamically change HTML elements on a
+                    webpage.</p>
+
                 <h3>Selecting Elements</h3>
                 <div class="code-example">
                     <pre><code>// Select a single element by ID
@@ -140,7 +150,7 @@ const container = document.querySelector(".container");
 // Select all elements matching a CSS selector (returns NodeList)
 const buttons = document.querySelectorAll("button.primary");</code></pre>
                 </div>
-                
+
                 <h3>Modifying Elements</h3>
                 <div class="code-example">
                     <pre><code>// Change text content
@@ -165,7 +175,7 @@ element.style.color = "#00f3ff";
 element.style.backgroundColor = "#1a1a2e";
 element.style.fontSize = "18px";</code></pre>
                 </div>
-                
+
                 <h3>Creating and Removing Elements</h3>
                 <div class="code-example">
                     <pre><code>// Create a new element
@@ -190,8 +200,9 @@ parentElement.removeChild(childElement); // Traditional method</code></pre>
         <section id="js-events">
             <h2>3. JavaScript Events</h2>
             <div class="content-box">
-                <p>Events are actions or occurrences that happen in the browser, which can be detected by JavaScript. Events allow you to create interactive web pages that respond to user actions.</p>
-                
+                <p>Events are actions or occurrences that happen in the browser, which can be detected by JavaScript.
+                    Events allow you to create interactive web pages that respond to user actions.</p>
+
                 <h3>Adding Event Listeners</h3>
                 <div class="code-example">
                     <pre><code>// Modern approach using addEventListener
@@ -211,7 +222,7 @@ element.addEventListener("mouseout", (event) => {
     element.style.backgroundColor = "#1a1a2e";
 });</code></pre>
                 </div>
-                
+
                 <h3>Common Events</h3>
                 <ul class="explanation">
                     <li><code>click</code> - When an element is clicked</li>
@@ -225,10 +236,12 @@ element.addEventListener("mouseout", (event) => {
                     <li><code>scroll</code> - When the user scrolls</li>
                     <li><code>change</code> - When form input value changes</li>
                 </ul>
-                
+
                 <h3>Event Bubbling and Delegation</h3>
-                <p>Events in JavaScript "bubble up" through the DOM hierarchy by default. This allows for event delegation, where you can attach a single event listener to a parent element to handle events for multiple child elements:</p>
-                
+                <p>Events in JavaScript "bubble up" through the DOM hierarchy by default. This allows for event
+                    delegation, where you can attach a single event listener to a parent element to handle events for
+                    multiple child elements:</p>
+
                 <div class="code-example">
                     <pre><code>// Event delegation example
 const list = document.querySelector("#item-list");
@@ -247,8 +260,9 @@ list.addEventListener("click", function(event) {
         <section id="js-functions">
             <h2>4. Functions & Objects</h2>
             <div class="content-box">
-                <p>Functions and objects are central to JavaScript programming. They allow you to organize, structure, and reuse code efficiently.</p>
-                
+                <p>Functions and objects are central to JavaScript programming. They allow you to organize, structure,
+                    and reuse code efficiently.</p>
+
                 <h3>Functions</h3>
                 <div class="code-example">
                     <pre><code>// Function declaration
@@ -279,7 +293,7 @@ function sum(...numbers) {
     console.log("This runs immediately!");
 })();</code></pre>
                 </div>
-                
+
                 <h3>Objects</h3>
                 <div class="code-example">
                     <pre><code>// Object literal
@@ -313,7 +327,7 @@ const { username, score } = user;
 // Spread operator with objects (ES6+)
 const updatedUser = { ...user, score: 110, rank: "Gold" };</code></pre>
                 </div>
-                
+
                 <h3>Constructor Functions & Classes</h3>
                 <div class="code-example">
                     <pre><code>// Constructor function (traditional approach)
@@ -362,4 +376,5 @@ const wizard = new Character("Merlin", "Wizard");</code></pre>
         <p>© 2025 CYBER_TECH_ACADEMY:: Web Development Unit</p>
     </footer>
 </body>
+
 </html>
