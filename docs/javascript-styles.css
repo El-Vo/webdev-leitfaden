@@ -1,0 +1,410 @@
+/* JavaScript-Seite: Retro-Computer-Thema */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+
+:root {
+  --primary: #33ff00;
+  --secondary: #ff9900;
+  --text-primary: #33ff00;
+  --text-secondary: #00ccff;
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --bg-tertiary: #222222;
+  --border-color: #33ff00;
+  --code-bg: #002200;
+  --code-text: #33ff00;
+  --code-border: #33ff00;
+}
+
+/* Allgemeiner Stil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(51, 255, 0, 0.05),
+    rgba(51, 255, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px rgba(51, 255, 0, 0.5);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="fill:none;stroke:%2333ff00;stroke-width:2px;"><path d="M 0,0 L 16,16 M 0,16 L 16,0"/></svg>') 8 8, auto;
+}
+
+/* Header-Bereich */
+header {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--border-color),
+    var(--border-color) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--border-color),
+    var(--border-color) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--primary);
+  letter-spacing: 2px;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 98%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px var(--primary);
+  }
+  20%, 21.999%, 63%, 63.999%, 95%, 97.999% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+}
+
+header .subtitle {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--bg-secondary);
+  margin-bottom: 30px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  border: 2px solid var(--border-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+nav li {
+  margin: 5px;
+}
+
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.2s;
+  font-size: 1.1em;
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+nav a::before {
+  content: "> ";
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  color: var(--secondary);
+  border: 1px dashed var(--border-color);
+}
+
+nav a:hover::before {
+  opacity: 1;
+}
+
+/* Hauptinhaltsbereich */
+main {
+  background-color: var(--bg-secondary);
+  padding: 40px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--border-color);
+}
+
+main::before {
+  content: "* JS_MODULE_v1.0 *";
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--border-color);
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 10px,
+    var(--bg-primary) 10px,
+    var(--bg-primary) 12px
+  );
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section:last-child::after {
+  display: none;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--secondary);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border-bottom: double 3px var(--border-color);
+}
+
+h2::before {
+  content: "/* ";
+}
+
+h2::after {
+  content: " */";
+}
+
+h3 {
+  font-family: 'VT323', monospace;
+  color: var(--text-secondary);
+  margin: 25px 0 15px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+h3::before {
+  content: "// ";
+  color: var(--secondary);
+}
+
+/* Inhaltsboxen */
+.content-box {
+  background-color: var(--bg-tertiary);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.content-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(51, 255, 0, 0.03) 50%, 
+    rgba(0, 0, 0, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+.content-box p {
+  margin-bottom: 15px;
+}
+
+.content-box ul, .content-box ol {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.content-box li {
+  margin-bottom: 8px;
+  list-style-type: square;
+}
+
+.content-box li::marker {
+  color: var(--secondary);
+}
+
+/* Code-Beispiele */
+.code-example {
+  background-color: var(--code-bg);
+  padding: 15px;
+  margin: 15px 0;
+  overflow-x: auto;
+  border: 1px solid var(--code-border);
+  position: relative;
+}
+
+.code-example::before {
+  content: "[CODE]";
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  background-color: var(--bg-secondary);
+  color: var(--secondary);
+  padding: 0 5px;
+  font-size: 0.8rem;
+}
+
+.code-example pre {
+  margin: 0;
+}
+
+.code-example code {
+  color: var(--code-text);
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  white-space: pre;
+}
+
+/* Erklärungsliste */
+.explanation {
+  list-style-type: none;
+  margin: 15px 0;
+}
+
+.explanation li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+}
+
+.explanation code {
+  background-color: var(--code-bg);
+  padding: 2px 6px;
+  margin-right: 8px;
+  font-family: 'VT323', monospace;
+  color: var(--code-text);
+  border: 1px solid var(--code-border);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  position: relative;
+  border: 2px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--border-color),
+    var(--border-color) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer p:last-child::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 5px 0;
+  }
+}
