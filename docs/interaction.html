@@ -1,109 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web technology in action</title>
+    <title>Webtechnologie in Aktion</title>
     <link rel="stylesheet" href="interaction-styles.css">
 </head>
 <body>
     <header>
-        <h1>Web technology in action</h1>
-        <p class="subtitle">Integration of the three building blocks</p>
+        <h1>Webtechnologie in Aktion</h1>
+        <p class="subtitle">Integration der drei Bausteine</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">HTML Module</a></li>
-            <li><a href="css.html">CSS Module</a></li>
-            <li><a href="javascript.html">JavaScript Module</a></li>
+            <li><a href="index.html">HTML-Modul</a></li>
+            <li><a href="css.html">CSS-Modul</a></li>
+            <li><a href="javascript.html">JavaScript-Modul</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="web-trinity">
-            <h2>The Web Trinity</h2>
+            <h2>Die Web-Dreifaltigkeit</h2>
             <div class="content-box">
-                <p>Modern web development is built upon three core technologies that work together to create rich, interactive user experiences:</p>
+                <p>Moderne Webentwicklung basiert auf drei Kerntechnologien, die zusammenarbeiten, um reichhaltige, interaktive Benutzererlebnisse zu schaffen:</p>
                 
                 <ul>
-                    <li><strong>HTML</strong> - The structure and content of web pages</li>
-                    <li><strong>CSS</strong> - The visual styling and layout</li>
-                    <li><strong>JavaScript</strong> - The behavior and interactivity</li>
+                    <li><strong>HTML</strong> - Die Struktur und der Inhalt von Webseiten</li>
+                    <li><strong>CSS</strong> - Die visuelle Gestaltung und das Layout</li>
+                    <li><strong>JavaScript</strong> - Das Verhalten und die Interaktivität</li>
                 </ul>
                 
-                <p>Each technology has a specific role, but their true power emerges when they work together. This interaction creates a powerful development paradigm often called "separation of concerns":</p>
+                <p>Jede Technologie hat eine spezifische Rolle, aber ihre wahre Stärke entfaltet sich, wenn sie zusammenarbeiten. Diese Interaktion schafft ein leistungsfähiges Entwicklungsparadigma, das oft als "Trennung der Belange" (Separation of Concerns) bezeichnet wird:</p>
                 
                 <div class="code-example">
-                    <pre><code>/* Architecture Overview */
+                    <pre><code>/* Architektur-Überblick */
 
-HTML: Structure & Content
+HTML: Struktur & Inhalt
   |
-  ├── Provides semantic meaning
-  ├── Organizes information
-  ├── Accessible foundation
-  └── SEO friendly markup
+  ├── Liefert semantische Bedeutung
+  ├── Organisiert Informationen
+  ├── Bildet zugängliche Grundlage
+  └── SEO-freundliche Auszeichnung
 
-CSS: Presentation & Styling
+CSS: Präsentation & Gestaltung
   |
-  ├── Controls visual appearance
-  ├── Handles responsive layouts
-  ├── Manages animations
-  └── Adapts to different devices
+  ├── Steuert visuelles Erscheinungsbild
+  ├── Verwaltet responsive Layouts
+  ├── Steuert Animationen
+  └── Passt sich an verschiedene Geräte an
 
-JavaScript: Behavior & Interactivity
+JavaScript: Verhalten & Interaktivität
   |
-  ├── Responds to user actions
-  ├── Manipulates DOM elements
-  ├── Processes data
-  └── Communicates with servers</code></pre>
+  ├── Reagiert auf Benutzeraktionen
+  ├── Manipuliert DOM-Elemente
+  ├── Verarbeitet Daten
+  └── Kommuniziert mit Servern</code></pre>
                 </div>
                 
-                <p>This separation makes code easier to maintain, allows specialists to focus on their areas of expertise, and creates a more robust application architecture.</p>
+                <p>Diese Trennung macht den Code leichter zu warten, ermöglicht es Spezialisten, sich auf ihre Fachgebiete zu konzentrieren, und schafft eine robustere Anwendungsarchitektur.</p>
             </div>
         </section>
 
         <section id="interaction-basics">
-            <h2>Basic Interactions</h2>
+            <h2>Grundlegende Interaktionen</h2>
             <div class="content-box">
-                <p>The core principle behind web interactions is that JavaScript can access and modify both HTML elements and CSS properties dynamically. Here's how they interact:</p>
+                <p>Das Kernprinzip hinter Web-Interaktionen ist, dass JavaScript sowohl auf HTML-Elemente als auch auf CSS-Eigenschaften dynamisch zugreifen und sie modifizieren kann. So interagieren sie:</p>
                 
-                <h3>JavaScript Accessing HTML</h3>
+                <h3>JavaScript greift auf HTML zu</h3>
                 <div class="code-example">
-                    <pre><code>// HTML element
-&lt;button id="action-button" class="cyber-button"&gt;INITIATE&lt;/button&gt;
+                    <pre><code>// HTML-Element
+&lt;button id="action-button" class="cyber-button"&gt;STARTEN&lt;/button&gt;
 
-// JavaScript accessing the element
+// JavaScript greift auf das Element zu
 const button = document.getElementById("action-button");
-const buttonText = button.textContent; // "INITIATE"
-button.textContent = "ACTIVATED";      // Changes the button text</code></pre>
+const buttonText = button.textContent; // "STARTEN"
+button.textContent = "AKTIVIERT";      // Ändert den Button-Text</code></pre>
                 </div>
                 
-                <h3>JavaScript Manipulating CSS</h3>
+                <h3>JavaScript manipuliert CSS</h3>
                 <div class="code-example">
-                    <pre><code>// CSS style definition
+                    <pre><code>// CSS-Stildefinition
 .highlighted {
     background-color: #ff00ff;
     color: #000;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
 }
 
-// JavaScript modifying styles
-// Method 1: Direct style manipulation
+// JavaScript ändert Stile
+// Methode 1: Direkte Stilmanipulation
 element.style.backgroundColor = "#ff00ff";
 element.style.color = "#000";
 
-// Method 2: Adding/removing classes (preferred)
+// Methode 2: Klassen hinzufügen/entfernen (bevorzugt)
 element.classList.add("highlighted");
 element.classList.remove("highlighted");
 element.classList.toggle("highlighted");</code></pre>
                 </div>
                 
-                <h3>Event-Driven Interactions</h3>
+                <h3>Ereignisgesteuerte Interaktionen</h3>
                 <div class="code-example">
                     <pre><code>// HTML
 &lt;div id="hover-area" class="interactive-area"&gt;
-    Hover over me
+    Fahre mit der Maus darüber
 &lt;/div&gt;
 
 // CSS
@@ -131,11 +131,11 @@ area.addEventListener("mouseout", function() {
         </section>
 
         <section id="practical-examples">
-            <h2>Practical Examples</h2>
+            <h2>Praktische Beispiele</h2>
             <div class="content-box">
-                <p>Let's explore practical examples of how HTML, CSS, and JavaScript work together to create common web features:</p>
+                <p>Lass uns praktische Beispiele untersuchen, wie HTML, CSS und JavaScript zusammenarbeiten, um gängige Web-Funktionen zu erstellen:</p>
                 
-                <h3>Example 1: Toggle Menu</h3>
+                <h3>Beispiel 1: Umschalt-Menü</h3>
                 <div class="code-example">
                     <pre><code>/* HTML */
 &lt;button id="menu-toggle" class="toggle-btn"&gt;
@@ -145,10 +145,10 @@ area.addEventListener("mouseout", function() {
 &lt;/button&gt;
 &lt;nav id="main-nav" class="navigation"&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Startseite&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Leistungen&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
 
@@ -190,21 +190,21 @@ menuToggle.addEventListener('click', function() {
 });</code></pre>
                 </div>
                 
-                <h3>Example 2: Form Validation</h3>
+                <h3>Beispiel 2: Formularvalidierung</h3>
                 <div class="code-example">
                     <pre><code>/* HTML */
 &lt;form id="cyber-form" class="contact-form"&gt;
     &lt;div class="form-group"&gt;
-        &lt;label for="user-email"&gt;EMAIL:&lt;/label&gt;
+        &lt;label for="user-email"&gt;E-MAIL:&lt;/label&gt;
         &lt;input type="email" id="user-email" required&gt;
         &lt;span class="error-message" id="email-error"&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class="form-group"&gt;
-        &lt;label for="user-password"&gt;PASSWORD:&lt;/label&gt;
+        &lt;label for="user-password"&gt;PASSWORT:&lt;/label&gt;
         &lt;input type="password" id="user-password" required&gt;
         &lt;span class="error-message" id="password-error"&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;button type="submit"&gt;SUBMIT&lt;/button&gt;
+    &lt;button type="submit"&gt;ABSENDEN&lt;/button&gt;
 &lt;/form&gt;
 
 /* CSS */

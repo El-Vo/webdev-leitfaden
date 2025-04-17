@@ -1,122 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Programming</title>
+    <title>JavaScript-Programmierung</title>
     <link rel="stylesheet" href="javascript-styles.css">
 </head>
 
 <body>
     <header>
         <h1>JavaScript</h1>
-        <p class="subtitle">The dynamic neural network of the web</p>
+        <p class="subtitle">Das dynamische neuronale Netzwerk des Webs</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">HTML Module</a></li>
-            <li><a href="css.html">CSS Module</a></li>
-            <li><a href="interaction.html">Interaction Module</a></li>
+            <li><a href="index.html">HTML-Modul</a></li>
+            <li><a href="css.html">CSS-Modul</a></li>
+            <li><a href="interaction.html">Interaktions-Modul</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="was-ist-js">
-            <h2>What is JavaScript?</h2>
+            <h2>Was ist JavaScript?</h2>
             <div class="content-box">
-                <p><strong>JavaScript</strong> is a dynamic, high-level programming language that enables interactive
-                    web pages and is an essential part of web applications.</p>
-                <p>While HTML provides structure and CSS handles styling, JavaScript adds behavior and interactivity to
-                    web pages. With JavaScript, you can create dynamic content, control multimedia, animate images,
-                    validate forms, and much more.</p>
-                <p>JavaScript was created in 1995 by Brendan Eich while working at Netscape and has since evolved into
-                    one of the world's most widely used programming languages, extending beyond the browser into server
-                    environments (Node.js), mobile applications, desktop software, and even IoT devices.</p>
+                <p><strong>JavaScript</strong> ist eine dynamische, hochentwickelte Programmiersprache, die interaktive
+                    Webseiten ermöglicht und ein wesentlicher Bestandteil von Webanwendungen ist.</p>
+                <p>Während HTML die Struktur bereitstellt und CSS das Styling übernimmt, fügt JavaScript Verhalten und Interaktivität zu
+                    Webseiten hinzu. Mit JavaScript kannst du dynamische Inhalte erstellen, Multimedia steuern, Bilder animieren,
+                    Formulare validieren und vieles mehr.</p>
+                <p>JavaScript wurde 1995 von Brendan Eich während seiner Arbeit bei Netscape entwickelt und hat sich seitdem zu
+                    einer der weltweit am häufigsten verwendeten Programmiersprachen entwickelt, die über den Browser hinaus in Server-
+                    Umgebungen (Node.js), mobile Anwendungen, Desktop-Software und sogar IoT-Geräte Einzug gehalten hat.</p>
             </div>
         </section>
 
         <section id="js-fundamentals">
-            <h2>1. JavaScript Fundamentals</h2>
+            <h2>1. JavaScript-Grundlagen</h2>
             <div class="content-box">
-                <p>JavaScript is a versatile language with syntax that may look familiar if you've worked with other
-                    programming languages. Here are some fundamental concepts:</p>
+                <p>JavaScript ist eine vielseitige Sprache mit einer Syntax, die dir vertraut vorkommen könnte, wenn du mit anderen
+                    Programmiersprachen gearbeitet hast. Hier sind einige grundlegende Konzepte:</p>
 
-                <h3>Variables and Data Types</h3>
+                <h3>Variablen und Datentypen</h3>
                 <div class="code-example">
-                    <pre><code>// Variables
-let message = "Hello, world!"; // String
-const pi = 3.14159;            // Number
+                    <pre><code>// Variablen
+let message = "Hallo, Welt!"; // String
+const pi = 3.14159;            // Zahl
 var isActive = true;           // Boolean
 
-// Modern JavaScript prefers let and const over var
-const user = {                 // Object
+// Modernes JavaScript bevorzugt let und const statt var
+const user = {                 // Objekt
     name: "CyberUser",
     level: 42,
     isAdmin: false
 };
 
-const colors = ["red", "green", "blue"]; // Array
+const colors = ["rot", "grün", "blau"]; // Array
 let noValue = null;            // Null
-let undefinedVar;              // Undefined (automatically assigned)</code></pre>
+let undefinedVar;              // Undefiniert (automatisch zugewiesen)</code></pre>
                 </div>
 
-                <h3>Operators</h3>
+                <h3>Operatoren</h3>
                 <div class="code-example">
-                    <pre><code>// Arithmetic operators
+                    <pre><code>// Arithmetische Operatoren
 let sum = 5 + 10;      // Addition
-let diff = 10 - 5;     // Subtraction
-let product = 5 * 10;  // Multiplication
+let diff = 10 - 5;     // Subtraktion
+let product = 5 * 10;  // Multiplikation
 let quotient = 10 / 5; // Division
-let remainder = 10 % 3; // Modulus (remainder)
+let remainder = 10 % 3; // Modulus (Rest)
 
-// Comparison operators
-let isEqual = 5 === 5;      // Strict equality (value and type)
-let isNotEqual = 5 !== "5"; // Strict inequality
-let greaterThan = 10 > 5;   // Greater than
+// Vergleichsoperatoren
+let isEqual = 5 === 5;      // Strikte Gleichheit (Wert und Typ)
+let isNotEqual = 5 !== "5"; // Strikte Ungleichheit
+let greaterThan = 10 > 5;   // Größer als
 
-// Logical operators
-let andResult = true && false; // Logical AND
-let orResult = true || false;  // Logical OR
-let notResult = !true;         // Logical NOT</code></pre>
+// Logische Operatoren
+let andResult = true && false; // Logisches UND
+let orResult = true || false;  // Logisches ODER
+let notResult = !true;         // Logische Negation</code></pre>
                 </div>
 
-                <h3>Control Flow</h3>
+                <h3>Kontrollfluss</h3>
                 <div class="code-example">
-                    <pre><code>// Conditional statements
+                    <pre><code>// Bedingte Anweisungen
 if (score >= 90) {
-    console.log("Excellent");
+    console.log("Hervorragend");
 } else if (score >= 70) {
-    console.log("Good");
+    console.log("Gut");
 } else {
-    console.log("Keep practicing");
+    console.log("Übe weiter");
 }
 
-// Switch statement
+// Switch-Anweisung
 switch (day) {
-    case "Monday":
-        console.log("Start of work week");
+    case "Montag":
+        console.log("Beginn der Arbeitswoche");
         break;
-    case "Friday":
-        console.log("End of work week");
+    case "Freitag":
+        console.log("Ende der Arbeitswoche");
         break;
     default:
-        console.log("Another day");
+        console.log("Ein anderer Tag");
 }
 
-// Loops
+// Schleifen
 for (let i = 0; i < 5; i++) {
-    console.log(`Iteration ${i}`);
+    console.log(`Durchlauf ${i}`);
 }
 
 let j = 0;
 while (j < 5) {
-    console.log(`While loop: ${j}`);
+    console.log(`While-Schleife: ${j}`);
     j++;
 }
 
-const items = ["item1", "item2", "item3"];
+const items = ["Element1", "Element2", "Element3"];
 for (const item of items) {
     console.log(item);
 }</code></pre>
@@ -125,15 +125,15 @@ for (const item of items) {
         </section>
 
         <section id="js-dom">
-            <h2>2. DOM Manipulation</h2>
+            <h2>2. DOM-Manipulation</h2>
             <div class="content-box">
-                <p>The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page
-                    so that programs can change the document structure, style, and content.</p>
+                <p>Das Document Object Model (DOM) ist eine Programmierschnittstelle für HTML-Dokumente. Es repräsentiert die Seite
+                    so, dass Programme die Dokumentstruktur, den Stil und den Inhalt ändern können.</p>
 
-                <p>JavaScript can access and manipulate the DOM, allowing you to dynamically change HTML elements on a
-                    webpage.</p>
+                <p>JavaScript kann auf das DOM zugreifen und es manipulieren, wodurch du HTML-Elemente auf einer
+                    Webseite dynamisch ändern kannst.</p>
 
-                <h3>Selecting Elements</h3>
+                <h3>Elemente auswählen</h3>
                 <div class="code-example">
                     <pre><code>// Select a single element by ID
 const header = document.getElementById("header");
@@ -198,12 +198,12 @@ parentElement.removeChild(childElement); // Traditional method</code></pre>
         </section>
 
         <section id="js-events">
-            <h2>3. JavaScript Events</h2>
+            <h2>3. JavaScript-Events</h2>
             <div class="content-box">
-                <p>Events are actions or occurrences that happen in the browser, which can be detected by JavaScript.
-                    Events allow you to create interactive web pages that respond to user actions.</p>
+                <p>Events sind Aktionen oder Ereignisse, die im Browser stattfinden und von JavaScript erkannt werden können.
+                    Events ermöglichen es Ihnen, interaktive Webseiten zu erstellen, die auf Benutzeraktionen reagieren.</p>
 
-                <h3>Adding Event Listeners</h3>
+                <h3>Event-Listener hinzufügen</h3>
                 <div class="code-example">
                     <pre><code>// Modern approach using addEventListener
 const button = document.querySelector("#submit-btn");
@@ -223,24 +223,24 @@ element.addEventListener("mouseout", (event) => {
 });</code></pre>
                 </div>
 
-                <h3>Common Events</h3>
+                <h3>Häufige Events</h3>
                 <ul class="explanation">
-                    <li><code>click</code> - When an element is clicked</li>
-                    <li><code>dblclick</code> - When an element is double-clicked</li>
-                    <li><code>mouseover</code> / <code>mouseout</code> - When the mouse enters/leaves an element</li>
-                    <li><code>mousedown</code> / <code>mouseup</code> - When mouse button is pressed/released</li>
-                    <li><code>keydown</code> / <code>keyup</code> - When a keyboard key is pressed/released</li>
-                    <li><code>submit</code> - When a form is submitted</li>
-                    <li><code>load</code> - When a resource (e.g., page, image) has loaded</li>
-                    <li><code>resize</code> - When the window is resized</li>
-                    <li><code>scroll</code> - When the user scrolls</li>
-                    <li><code>change</code> - When form input value changes</li>
+                    <li><code>click</code> - Wenn auf ein Element geklickt wird</li>
+                    <li><code>dblclick</code> - Wenn ein Element doppelt geklickt wird</li>
+                    <li><code>mouseover</code> / <code>mouseout</code> - Wenn die Maus ein Element betritt/verlässt</li>
+                    <li><code>mousedown</code> / <code>mouseup</code> - Wenn die Maustaste gedrückt/losgelassen wird</li>
+                    <li><code>keydown</code> / <code>keyup</code> - Wenn eine Taste gedrückt/losgelassen wird</li>
+                    <li><code>submit</code> - Wenn ein Formular abgeschickt wird</li>
+                    <li><code>load</code> - Wenn eine Ressource (z.B. Seite, Bild) geladen wurde</li>
+                    <li><code>resize</code> - Wenn das Fenster in der Größe verändert wird</li>
+                    <li><code>scroll</code> - Wenn der Benutzer scrollt</li>
+                    <li><code>change</code> - Wenn sich der Wert eines Formularelements ändert</li>
                 </ul>
 
-                <h3>Event Bubbling and Delegation</h3>
-                <p>Events in JavaScript "bubble up" through the DOM hierarchy by default. This allows for event
-                    delegation, where you can attach a single event listener to a parent element to handle events for
-                    multiple child elements:</p>
+                <h3>Event Bubbling und Delegation</h3>
+                <p>Events in JavaScript "bubble up" (steigen auf) durch die DOM-Hierarchie standardmäßig nach oben. Dies ermöglicht Event
+                    Delegation, wobei Sie einen einzelnen Event-Listener an ein übergeordnetes Element anhängen können, um Events für
+                    mehrere untergeordnete Elemente zu verarbeiten:</p>
 
                 <div class="code-example">
                     <pre><code>// Event delegation example
@@ -260,8 +260,7 @@ list.addEventListener("click", function(event) {
         <section id="js-functions">
             <h2>4. Functions & Objects</h2>
             <div class="content-box">
-                <p>Functions and objects are central to JavaScript programming. They allow you to organize, structure,
-                    and reuse code efficiently.</p>
+                <p>Functions und Objects (Funktionen und Objekte) sind zentrale Elemente der JavaScript-Programmierung. Sie ermöglichen es Ihnen, Code effizient zu organisieren, zu strukturieren und wiederzuverwenden.</p>
 
                 <h3>Functions</h3>
                 <div class="code-example">
@@ -372,8 +371,8 @@ const wizard = new Character("Merlin", "Wizard");</code></pre>
     </main>
 
     <footer>
-        <p>This page was created to teach the basic concepts of JavaScript.</p>
-        <p>© 2025 CYBER_TECH_ACADEMY:: Web Development Unit</p>
+        <p>Diese Seite wurde erstellt, um die grundlegenden Konzepte von JavaScript zu vermitteln.</p>
+        <p>© 2025 Web Development Track</p>
     </footer>
 </body>
 

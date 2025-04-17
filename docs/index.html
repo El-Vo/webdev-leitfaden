@@ -1,83 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basics</title>
+    <title>HTML Grundlagen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Web Development: HTML</h1>
-        <p class="subtitle">The building blocks of the web hello there</p>
+        <h1>Webentwicklung: HTML</h1>
+        <p class="subtitle">Die Bausteine des Webs</p>
     </header>
     <nav>
         <ul>
-            <li><a href="#was-ist-html">What is HTML?</a></li>
-            <li><a href="css.html">CSS Module</a></li>
-            <li><a href="javascript.html">JavaScript Module</a></li>
-            <li><a href="interaction.html">Interaction Module</a></li>
+            <li><a href="css.html">CSS-Modul</a></li>
+            <li><a href="javascript.html">JavaScript-Modul</a></li>
+            <li><a href="interaction.html">Interaktions-Modul</a></li>
         </ul>
     </nav>
     <main>
         <section id="was-ist-html">
-            <h2>What is HTML?</h2>
+            <h2>Was ist HTML?</h2>
             <div class="content-box">
-                <p><strong>HTML</strong> stands for <em>Hypertext Markup Language</em> and is the fundamental building block from which websites are created.</p>
-                <p>HTML allows us to structure a website through sections, paragraphs, and headings. It enables us to create text, links, maps, lists, buttons, and much more.</p>
+                <p><strong>HTML</strong> steht für <em>Hypertext Markup Language</em> und ist der grundlegende Baustein, aus dem Webseiten erstellt werden.</p>
+                <p>HTML ermöglicht es uns, eine Webseite durch Abschnitte, Absätze und Überschriften zu strukturieren. Es erlaubt uns, Text, Links, Karten, Listen, Buttons und vieles mehr zu erstellen.</p>
             </div>
         </section>
         <section id="html-tags">
-            <h2>1. HTML Tags</h2>
+            <h2>1. HTML-Tags</h2>
             <div class="content-box">
-                <p>The structure of an HTML file is very simple. Almost all elements are merely content enclosed in opening and closing HTML tags. For example, you would write the title of a webpage like this:</p>
+                <p>Die Struktur einer HTML-Datei ist sehr einfach. Fast alle Elemente sind lediglich Inhalte, die von öffnenden und schließenden HTML-Tags umschlossen werden. Zum Beispiel würdest du den Titel einer Webseite so schreiben:</p>
                 
                 <div class="code-example">
                     <pre><code>&lt;title&gt;Document&lt;/title&gt;</code></pre>
                 </div>
                 
-                <p>Although the current HTML version (HTML5) contains 140 different tags, most websites are created using only a fraction of them. You have already seen the title tag, let's take a quick look at other commonly used tags. You will probably use these in your project as well:</p>
+                <p>Obwohl die aktuelle HTML-Version (HTML5) 140 verschiedene Tags enthält, werden die meisten Websites mit nur einem Bruchteil davon erstellt. Du hast bereits das Title-Tag gesehen, werfen wir einen kurzen Blick auf andere häufig verwendete Tags. Du wirst diese wahrscheinlich auch in deinem Projekt verwenden:</p>
                 
                 <ul class="explanation">
-                    <li><code>&lt;html&gt;</code> - Must enclose all the remaining code</li>
-                    <li><code>&lt;head&gt;</code> - Contains the title, the link to the CSS file (styling) and various other information</li>
-                    <li><code>&lt;body&gt;</code> - Contains the visible content of a website</li>
-                    <li><code>&lt;p&gt;</code> - Paragraph, simple text goes in here</li>
-                    <li><code>&lt;h1&gt;</code> - Top-level heading of a website</li>
-                    <li><code>&lt;h2&gt;</code> - Second-level heading</li>
-                    <li><code>&lt;div&gt;</code> - Structure that groups content</li>
-                    <li><code>&lt;ul&gt;</code> - Unordered list, containing list elements <code>&lt;li&gt;</code></li>
-                    <li><code>&lt;li&gt;</code> - List item, used within lists</li>
-                    <li><code>&lt;a&gt;</code> - Link tag, used to link from one website to another</li>
-                    <li><code>&lt;img&gt;</code> - An image in an HTML page</li>
-                    <li><code>&lt;form&gt;</code> - For creating an HTML form for user input</li>
-                    <li><code>&lt;button&gt;</code> - Creates a clickable button</li>
-                    <li><code>&lt;header&gt;</code> - Represents the header section of a page</li>
-                    <li><code>&lt;nav&gt;</code> - Used for navigation links</li>
-                    <li><code>&lt;main&gt;</code> - Contains the main content of the document</li>
-                    <li><code>&lt;section&gt;</code> - Defines a section in a document</li>
-                    <li><code>&lt;footer&gt;</code> - Represents the footer section of a page</li>
-                    <li><code>&lt;meta&gt;</code> - Provides metadata about the HTML document</li>
-                    <li><code>&lt;link&gt;</code> - Used to link external resources like stylesheets</li>
-                    <li><code>&lt;strong&gt;</code> - Indicates text with strong importance (bold)</li>
-                    <li><code>&lt;em&gt;</code> - Emphasizes text (italic)</li>
-                    <li><code>&lt;pre&gt;</code> - Preserves both spaces and line breaks</li>
-                    <li><code>&lt;code&gt;</code> - Defines a piece of computer code</li>
-                    <li><code>&lt;!DOCTYPE&gt;</code> - Declaration that defines the document type</li>
+                    <li><code>&lt;html&gt;</code> - Muss den gesamten übrigen Code umschließen</li>
+                    <li><code>&lt;head&gt;</code> - Enthält den Titel, die Verknüpfung zur CSS-Datei (Styling) und verschiedene andere Informationen</li>
+                    <li><code>&lt;body&gt;</code> - Enthält den sichtbaren Inhalt einer Website</li>
+                    <li><code>&lt;p&gt;</code> - Absatz, einfacher Text wird hier eingefügt</li>
+                    <li><code>&lt;h1&gt;</code> - Überschrift der obersten Ebene einer Website</li>
+                    <li><code>&lt;h2&gt;</code> - Überschrift der zweiten Ebene</li>
+                    <li><code>&lt;div&gt;</code> - Struktur, die Inhalte gruppiert</li>
+                    <li><code>&lt;ul&gt;</code> - Ungeordnete Liste, enthält Listenelemente <code>&lt;li&gt;</code></li>
+                    <li><code>&lt;li&gt;</code> - Listenelement, wird innerhalb von Listen verwendet</li>
+                    <li><code>&lt;a&gt;</code> - Link-Tag, wird verwendet, um von einer Website zu einer anderen zu verlinken</li>
+                    <li><code>&lt;img&gt;</code> - Ein Bild in einer HTML-Seite</li>
+                    <li><code>&lt;form&gt;</code> - Zum Erstellen eines HTML-Formulars für Benutzereingaben</li>
+                    <li><code>&lt;button&gt;</code> - Erstellt einen klickbaren Button</li>
+                    <li><code>&lt;header&gt;</code> - Repräsentiert den Kopfbereich einer Seite</li>
+                    <li><code>&lt;nav&gt;</code> - Wird für Navigationslinks verwendet</li>
+                    <li><code>&lt;main&gt;</code> - Enthält den Hauptinhalt des Dokuments</li>
+                    <li><code>&lt;section&gt;</code> - Definiert einen Abschnitt in einem Dokument</li>
+                    <li><code>&lt;footer&gt;</code> - Repräsentiert den Fußbereich einer Seite</li>
+                    <li><code>&lt;meta&gt;</code> - Stellt Metadaten über das HTML-Dokument bereit</li>
+                    <li><code>&lt;link&gt;</code> - Wird verwendet, um externe Ressourcen wie Stylesheets zu verknüpfen</li>
+                    <li><code>&lt;strong&gt;</code> - Kennzeichnet Text mit starker Bedeutung (fett)</li>
+                    <li><code>&lt;em&gt;</code> - Betont Text (kursiv)</li>
+                    <li><code>&lt;pre&gt;</code> - Behält sowohl Leerzeichen als auch Zeilenumbrüche bei</li>
+                    <li><code>&lt;code&gt;</code> - Definiert ein Stück Computercode</li>
+                    <li><code>&lt;!DOCTYPE&gt;</code> - Deklaration, die den Dokumenttyp definiert</li>
                 </ul>
             </div>
         </section>
         <section id="html-struktur">
-            <h2>2. HTML Structure</h2>
+            <h2>2. HTML-Struktur</h2>
             <div class="content-box">
-                <p>Now that you know the majority of relevant tags, the only question remaining is how we actually write HTML code. For this, it's important to know that all HTML documents have the same boilerplate-like structure that must be present before anything useful can be done. The boilerplate looks something like this and is often simply accessible via a shortcut (so you don't have to retype everything every time you create a new file):</p>
+                <p>Jetzt, da du die Mehrheit der relevanten Tags kennst, bleibt nur noch die Frage, wie wir tatsächlich HTML-Code schreiben. Dafür ist es wichtig zu wissen, dass alle HTML-Dokumente die gleiche grundlegende Struktur aufweisen müssen, bevor etwas Nützliches getan werden kann. Diese Grundstruktur sieht in etwa so aus und ist oft über eine Tastenkombination zugänglich (damit du nicht jedes Mal alles neu tippen musst, wenn du eine neue Datei erstellst):</p>
                 
                 <div class="code-example">
                     <pre><code>
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="de"&gt;
   &lt;head&gt;
-    &lt;title&gt;Document&lt;/title&gt;
+    &lt;title&gt;Dokument&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
   &lt;/body&gt;
@@ -85,15 +84,15 @@
                     </code></pre>
                 </div>
                 
-                <p>All content that appears on a webpage is written between the <code>&lt;body&gt;</code> tags. Now we know the basic structure and some HTML tags, but how and where do we write HTML code? The answer is simple: We can write HTML code anywhere! Even in a simple text editor, as long as we save the code as .html, we can view the results in a web browser.</p>
+                <p>Alle Inhalte, die auf einer Webseite erscheinen, werden zwischen den <code>&lt;body&gt;</code>-Tags geschrieben. Nun kennen wir die grundlegende Struktur und einige HTML-Tags, aber wie und wo schreiben wir HTML-Code? Die Antwort ist einfach: Wir können HTML-Code überall schreiben! Selbst in einem einfachen Texteditor, solange wir den Code als .html speichern, können wir die Ergebnisse in einem Webbrowser betrachten.</p>
                 
-                <p class="important-note">Please note that we should always save the home page of our websites as <strong>index.html</strong>. This is because web servers look for an index.html page by default when users access our websites - and if there isn't one, it can lead to major problems.</p>
+                <p class="important-note">Bitte beachte, dass wir die Startseite unserer Websites immer als <strong>index.html</strong> speichern sollten. Der Grund dafür ist, dass Webserver standardmäßig nach einer index.html-Datei suchen, wenn Benutzer unsere Websites aufrufen - und wenn keine vorhanden ist, kann dies zu erheblichen Problemen führen.</p>
             </div>
         </section>
     </main>
     <footer>
-        <p>This website was created to teach the basic concepts of HTML.</p>
-        <p>© 2025 Web Development Course</p>
+        <p>Diese Website wurde erstellt, um die Grundkonzepte von HTML zu vermitteln.</p>
+        <p>© 2025 Web Development Track</p>
     </footer>
 </body>
 </html>
