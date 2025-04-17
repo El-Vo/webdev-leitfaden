@@ -1,140 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Styling</title>
+    <title>CSS Gestaltung</title>
     <link rel="stylesheet" href="css-styles.css">
 </head>
 <body>
     <header>
-        <h1>Web Development: CSS</h1>
-        <p class="subtitle">The visual styling of the web</p>
+        <h1>Webentwicklung: CSS</h1>
+        <p class="subtitle">Die visuelle Gestaltung des Webs</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">HTML Module</a></li>
-            <li><a href="javascript.html">JavaScript Module</a></li>
-            <li><a href="interaction.html">Interaction Module</a></li>
+            <li><a href="index.html">HTML-Modul</a></li>
+            <li><a href="javascript.html">JavaScript-Modul</a></li>
+            <li><a href="interaction.html">Interaktions-Modul</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="was-ist-css">
-            <h2>What is CSS?</h2>
+            <h2>Was ist CSS?</h2>
             <div class="content-box">
-                <p><strong>CSS</strong> stands for <em>Cascading Style Sheets</em> and is the technology that brings visual style to web pages.</p>
-                <p>While HTML provides the structure and content of a web page, CSS takes care of how these elements look. With CSS, you can define colors, fonts, spacing, layouts, animations, and more.</p>
-                <p>CSS follows a simple rule-based syntax that allows you to select HTML elements and apply visual properties to them.</p>
+                <p><strong>CSS</strong> steht für <em>Cascading Style Sheets</em> und ist die Technologie, die Webseiten visuellen Stil verleiht.</p>
+                <p>Während HTML die Struktur und den Inhalt einer Webseite bereitstellt, kümmert sich CSS um das Aussehen dieser Elemente. Mit CSS kannst du Farben, Schriftarten, Abstände, Layouts, Animationen und mehr definieren.</p>
+                <p>CSS folgt einer einfachen regelbasierten Syntax, die es dir ermöglicht, HTML-Elemente auszuwählen und visuelle Eigenschaften auf sie anzuwenden.</p>
             </div>
         </section>
 
         <section id="css-selectors">
-            <h2>1. CSS Selectors</h2>
+            <h2>1. CSS-Selektoren</h2>
             <div class="content-box">
-                <p>CSS selectors are patterns used to select and style HTML elements. The selector tells the browser which elements should be affected by the styling rules.</p>
+                <p>CSS-Selektoren sind Muster, die verwendet werden, um HTML-Elemente auszuwählen und zu gestalten. Der Selektor teilt dem Browser mit, welche Elemente von den Gestaltungsregeln betroffen sein sollen.</p>
                 
                 <div class="code-example">
-                    <pre><code>selector {
-    property: value;
-    another-property: another-value;
+                    <pre><code>selektor {
+    eigenschaft: wert;
+    andere-eigenschaft: anderer-wert;
 }</code></pre>
                 </div>
                 
-                <p>Here are some of the most important CSS selectors:</p>
+                <p>Hier sind einige der wichtigsten CSS-Selektoren:</p>
                 
                 <ul class="explanation">
-                    <li><code>element</code> - Selects all elements of the specified type (e.g., <code>p</code> selects all paragraphs)</li>
-                    <li><code>#id</code> - Selects an element with a specific ID (e.g., <code>#header</code>)</li>
-                    <li><code>.class</code> - Selects all elements with a specific class (e.g., <code>.content-box</code>)</li>
-                    <li><code>element.class</code> - Selects only elements of the specified type with the class (e.g., <code>p.intro</code>)</li>
-                    <li><code>parent > child</code> - Selects direct children of a parent element</li>
-                    <li><code>element1, element2</code> - Selects multiple elements</li>
-                    <li><code>element[attribute]</code> - Selects elements with a specific attribute</li>
-                    <li><code>:hover</code> - Selects elements when the mouse hovers over them</li>
+                    <li><code>element</code> - Wählt alle Elemente des angegebenen Typs aus (z.B. wählt <code>p</code> alle Absätze aus)</li>
+                    <li><code>#id</code> - Wählt ein Element mit einer bestimmten ID aus (z.B. <code>#header</code>)</li>
+                    <li><code>.class</code> - Wählt alle Elemente mit einer bestimmten Klasse aus (z.B. <code>.content-box</code>)</li>
+                    <li><code>element.class</code> - Wählt nur Elemente des angegebenen Typs mit der Klasse aus (z.B. <code>p.intro</code>)</li>
+                    <li><code>parent > child</code> - Wählt direkte Kinder eines Elternelements aus</li>
+                    <li><code>element1, element2</code> - Wählt mehrere Elemente aus</li>
+                    <li><code>element[attribute]</code> - Wählt Elemente mit einem bestimmten Attribut aus</li>
+                    <li><code>:hover</code> - Wählt Elemente aus, wenn du mit der Maus darüberfährst</li>
                 </ul>
                 
-                <p>Selectors can be combined to create more specific targeting patterns. The more specific a selector is, the higher its priority in the "cascade".</p>
+                <p>Selektoren können kombiniert werden, um spezifischere Auswahlmuster zu erstellen. Je spezifischer ein Selektor ist, desto höher ist seine Priorität in der "Kaskade".</p>
             </div>
         </section>
 
         <section id="css-properties">
-            <h2>2. CSS Properties</h2>
+            <h2>2. CSS-Eigenschaften</h2>
             <div class="content-box">
-                <p>CSS properties define how selected HTML elements should be displayed. Each property has a range of valid values and affects different aspects of an element's appearance.</p>
+                <p>CSS-Eigenschaften definieren, wie ausgewählte HTML-Elemente angezeigt werden sollen. Jede Eigenschaft hat eine Reihe gültiger Werte und beeinflusst verschiedene Aspekte des Erscheinungsbilds eines Elements.</p>
                 
-                <p>Here are some essential CSS properties categorized by function:</p>
+                <p>Hier sind einige wesentliche CSS-Eigenschaften nach Funktion kategorisiert:</p>
                 
-                <h3>Text Styling</h3>
+                <h3>Textstyling</h3>
                 <ul class="explanation">
-                    <li><code>color</code> - Sets the text color</li>
-                    <li><code>font-family</code> - Specifies the font</li>
-                    <li><code>font-size</code> - Sets the text size</li>
-                    <li><code>font-weight</code> - Controls text boldness</li>
-                    <li><code>text-align</code> - Aligns text (left, right, center, justify)</li>
-                    <li><code>text-decoration</code> - Adds underlines, overlines, etc.</li>
+                    <li><code>color</code> - Legt die Textfarbe fest</li>
+                    <li><code>font-family</code> - Bestimmt die Schriftart</li>
+                    <li><code>font-size</code> - Legt die Textgröße fest</li>
+                    <li><code>font-weight</code> - Steuert die Textstärke</li>
+                    <li><code>text-align</code> - Richtet Text aus (links, rechts, zentriert, Blocksatz)</li>
+                    <li><code>text-decoration</code> - Fügt Unterstreichungen, Überstreichungen usw. hinzu</li>
                 </ul>
                 
-                <h3>Box Model Properties</h3>
+                <h3>Box-Modell-Eigenschaften</h3>
                 <ul class="explanation">
-                    <li><code>width</code> & <code>height</code> - Set element dimensions</li>
-                    <li><code>padding</code> - Space inside the element, between content and border</li>
-                    <li><code>border</code> - The outline around an element</li>
-                    <li><code>margin</code> - Space outside the element, between the border and other elements</li>
+                    <li><code>width</code> & <code>height</code> - Legen die Elementabmessungen fest</li>
+                    <li><code>padding</code> - Innenabstand des Elements, zwischen Inhalt und Rand</li>
+                    <li><code>border</code> - Der Umriss um ein Element</li>
+                    <li><code>margin</code> - Außenabstand des Elements, zwischen dem Rand und anderen Elementen</li>
                 </ul>
                 
-                <h3>Layout Properties</h3>
+                <h3>Layout-Eigenschaften</h3>
                 <ul class="explanation">
-                    <li><code>display</code> - Controls how an element is displayed (block, inline, flex, grid, etc.)</li>
-                    <li><code>position</code> - Sets positioning method (static, relative, absolute, fixed)</li>
-                    <li><code>float</code> - Allows elements to float to the left or right</li>
-                    <li><code>z-index</code> - Controls stacking order of positioned elements</li>
+                    <li><code>display</code> - Steuert, wie ein Element angezeigt wird (block, inline, flex, grid usw.)</li>
+                    <li><code>position</code> - Legt die Positionierungsmethode fest (static, relative, absolute, fixed)</li>
+                    <li><code>float</code> - Erlaubt Elementen, nach links oder rechts zu fließen</li>
+                    <li><code>z-index</code> - Steuert die Stapelreihenfolge positionierter Elemente</li>
                 </ul>
                 
-                <h3>Visual Properties</h3>
+                <h3>Visuelle Eigenschaften</h3>
                 <ul class="explanation">
-                    <li><code>background-color</code> - Sets the background color</li>
-                    <li><code>background-image</code> - Adds a background image</li>
-                    <li><code>opacity</code> - Controls element transparency</li>
-                    <li><code>box-shadow</code> - Adds shadow effects</li>
-                    <li><code>border-radius</code> - Creates rounded corners</li>
+                    <li><code>background-color</code> - Legt die Hintergrundfarbe fest</li>
+                    <li><code>background-image</code> - Fügt ein Hintergrundbild hinzu</li>
+                    <li><code>opacity</code> - Steuert die Transparenz des Elements</li>
+                    <li><code>box-shadow</code> - Fügt Schatteneffekte hinzu</li>
+                    <li><code>border-radius</code> - Erzeugt abgerundete Ecken</li>
                 </ul>
                 
                 <div class="code-example">
                     <pre><code>.modern-button {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 12px 24px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    transition: all 0.2s ease;
+    background-color: #ffffff; /* Hintergrundfarbe */
+    color: #333333; /* Textfarbe */
+    padding: 12px 24px; /* Innenabstand */
+    border: 1px solid #e0e0e0; /* Rand */
+    border-radius: 4px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten */
+    font-family: 'Inter', sans-serif; /* Schriftart */
+    font-weight: 500; /* Schriftstärke */
+    transition: all 0.2s ease; /* Übergang für Hover-Effekt */
 }
 
 .modern-button:hover {
-    background-color: #f8f8f8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8; /* Hintergrundfarbe beim Hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten beim Hover */
 }</code></pre>
                 </div>
             </div>
         </section>
 
         <section id="css-boxmodel">
-            <h2>3. The CSS Box Model</h2>
+            <h2>3. Das CSS Box-Modell</h2>
             <div class="content-box">
-                <p>The CSS Box Model is a fundamental concept that describes how elements are rendered in the browser. Every HTML element is treated as a rectangular box with content, padding, border, and margin areas.</p>
+                <p>Das CSS Box-Modell ist ein grundlegendes Konzept, das beschreibt, wie Elemente im Browser dargestellt werden. Jedes HTML-Element wird als rechteckige Box behandelt, die aus Inhalts-, Innenabstands-, Rand- und Außenabstandsbereichen besteht.</p>
                 
                 <ul>
-                    <li><strong>Content</strong>: The actual content of the element (text, images, etc.)</li>
-                    <li><strong>Padding</strong>: Space between the content and the border</li>
-                    <li><strong>Border</strong>: Line that surrounds the padding and content</li>
-                    <li><strong>Margin</strong>: Space outside the element that separates it from other elements</li>
+                    <li><strong>Inhalt (Content)</strong>: Der tatsächliche Inhalt des Elements (Text, Bilder usw.)</li>
+                    <li><strong>Innenabstand (Padding)</strong>: Raum zwischen dem Inhalt und dem Rand</li>
+                    <li><strong>Rand (Border)</strong>: Linie, die den Innenabstand und den Inhalt umgibt</li>
+                    <li><strong>Außenabstand (Margin)</strong>: Raum außerhalb des Elements, der es von anderen Elementen trennt</li>
                 </ul>
                 
-                <p>By default, the width and height properties in CSS define the size of the content area only. This means padding and border values are added to the element's total width and height.</p>
+                <p>Standardmäßig definieren die Eigenschaften <code>width</code> und <code>height</code> in CSS nur die Größe des Inhaltsbereichs. Das bedeutet, dass Innenabstand (Padding) und Rand (Border) zur Gesamtbreite und -höhe des Elements hinzugefügt werden.</p>
                 
                 <div class="code-example">
                     <pre><code>.default-box {
@@ -143,50 +143,50 @@
     padding: 20px;
     border: 1px solid #e0e0e0;
     margin: 15px;
-    /* Total width: 300px (content) + 40px (padding) + 2px (border) = 342px */
+    /* Gesamtbreite: 300px (Inhalt) + 40px (Padding) + 2px (Border) = 342px */
 }
 
 .alternative-box {
-    box-sizing: border-box; /* Changes how width and height are calculated */
+    box-sizing: border-box; /* Ändert, wie Breite und Höhe berechnet werden */
     width: 300px;
     height: 150px;
     padding: 20px;
     border: 1px solid #e0e0e0;
     margin: 15px;
-    /* Total width: 300px (includes content, padding, and border) */
+    /* Gesamtbreite: 300px (beinhaltet Inhalt, Padding und Border) */
 }</code></pre>
                 </div>
                 
-                <p>The <code>box-sizing: border-box;</code> property changes this behavior by including padding and border in the element's specified width and height. This makes it easier to create layouts without having to constantly calculate the total dimensions.</p>
+                <p>Die Eigenschaft <code>box-sizing: border-box;</code> ändert dieses Verhalten, indem sie Innenabstand (Padding) und Rand (Border) in die angegebene Breite und Höhe des Elements einschließt. Dies erleichtert das Erstellen von Layouts, ohne ständig die Gesamtabmessungen berechnen zu müssen.</p>
             </div>
         </section>
 
         <section id="css-responsive">
-            <h2>4. Responsive Design</h2>
+            <h2>4. Responsives Design</h2>
             <div class="content-box">
-                <p>Responsive design is an approach to creating websites that look and function well on any device, regardless of screen size. This is essential in today's multi-device world.</p>
+                <p>Responsives Design ist ein Ansatz zur Erstellung von Websites, die auf jedem Gerät, unabhängig von der Bildschirmgröße, gut aussehen und funktionieren. Dies ist in der heutigen Welt mit vielen verschiedenen Geräten unerlässlich.</p>
                 
-                <h3>Key Components of Responsive Design:</h3>
+                <h3>Schlüsselkomponenten des responsiven Designs:</h3>
                 
                 <h4>Media Queries</h4>
-                <p>Media queries allow you to apply different CSS rules based on screen characteristics:</p>
+                <p>Media Queries ermöglichen es dir, unterschiedliche CSS-Regeln basierend auf Bildschirmeigenschaften anzuwenden:</p>
                 
                 <div class="code-example">
-                    <pre><code>/* Base styles for all screen sizes */
+                    <pre><code>/* Basisstile für alle Bildschirmgrößen */
 .container {
     width: 100%;
     padding: 15px;
 }
 
-/* Styles for screens wider than 768px */
+/* Stile für Bildschirme breiter als 768px */
 @media screen and (min-width: 768px) {
     .container {
         width: 750px;
-        margin: 0 auto;
+        margin: 0 auto; /* Zentriert den Container */
     }
 }
 
-/* Styles for screens wider than 1200px */
+/* Stile für Bildschirme breiter als 1200px */
 @media screen and (min-width: 1200px) {
     .container {
         width: 1170px;
@@ -194,47 +194,48 @@
 }</code></pre>
                 </div>
                 
-                <h4>Flexible Grids</h4>
-                <p>Modern CSS provides powerful layout systems like Flexbox and Grid that make responsive design easier:</p>
+                <h4>Flexible Grids (Raster)</h4>
+                <p>Modernes CSS bietet leistungsstarke Layoutsysteme wie Flexbox und Grid, die responsives Design erleichtern:</p>
                 
                 <div class="code-example">
-                    <pre><code>/* Flexbox Example */
+                    <pre><code>/* Flexbox Beispiel */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Erlaubt Umbruch */
 }
 
 .flex-item {
-    flex: 1 1 300px; /* Grow, shrink, base width */
+    flex: 1 1 300px; /* Wachsen, Schrumpfen, Basisbreite */
     margin: 10px;
 }
 
-/* Grid Example */
+/* Grid Beispiel */
 .grid-container {
     display: grid;
+    /* Erstellt Spalten, die sich automatisch anpassen, min. 250px breit */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 20px; /* Abstand zwischen Grid-Elementen */
 }</code></pre>
                 </div>
                 
-                <h4>Responsive Units</h4>
-                <p>Using relative units instead of fixed pixels helps with responsive design:</p>
+                <h4>Responsive Einheiten</h4>
+                <p>Die Verwendung relativer Einheiten anstelle von festen Pixeln hilft beim responsiven Design:</p>
                 <ul class="explanation">
-                    <li><code>%</code> - Relative to parent element</li>
-                    <li><code>em</code> - Relative to the font-size of the element</li>
-                    <li><code>rem</code> - Relative to the font-size of the root element</li>
-                    <li><code>vw</code> - Viewport width (1vw = 1% of viewport width)</li>
-                    <li><code>vh</code> - Viewport height (1vh = 1% of viewport height)</li>
+                    <li><code>%</code> - Relativ zum Elternelement</li>
+                    <li><code>em</code> - Relativ zur Schriftgröße des Elements</li>
+                    <li><code>rem</code> - Relativ zur Schriftgröße des Wurzelelements (<code>html</code>)</li>
+                    <li><code>vw</code> - Viewport-Breite (1vw = 1% der Viewport-Breite)</li>
+                    <li><code>vh</code> - Viewport-Höhe (1vh = 1% der Viewport-Höhe)</li>
                 </ul>
                 
-                <p>Responsive design is not just about adjusting layouts; it also involves considerations for touch interfaces, variable connection speeds, and different device capabilities.</p>
+                <p>Responsives Design bedeutet nicht nur das Anpassen von Layouts; es beinhaltet auch Überlegungen zu Touch-Oberflächen, variablen Verbindungsgeschwindigkeiten und unterschiedlichen Gerätefähigkeiten.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>This page was created to teach the basic concepts of CSS.</p>
-        <p>© 2025 Web Development Course</p>
+        <p>Diese Seite wurde erstellt, um dir die grundlegenden Konzepte von CSS beizubringen.</p>
+        <p>© 2025 Web Development Track</p>
     </footer>
 </body>
 </html>
